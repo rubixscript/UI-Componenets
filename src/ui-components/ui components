@@ -1,0 +1,44 @@
+1 animated-dock
+  • A macOS-inspired dock with smooth magnification and bounce effects
+
+2 parallax-story-cards
+  • Multi-layered cards with elements that move at different speeds during scroll/hover
+
+3 morphing-cards
+  • Fluid shape-transforming cards that reorganize content during state changes
+
+4 liquid-buttons
+  • Buttons with organic fluid animations and reactive ripple effects
+
+5 perspective-grid-gallery
+  • Dynamic 3D-like grid that responds to cursor position with perspective shifts
+
+6 elastic-tabs
+  • Physics-based tabs with spring effects and flowing content transitions
+
+7 breathable-loaders
+  • Loading indicators with calming, natural breathing pattern animations
+
+8 ambient-background-panels
+  • Subtle responsive background elements that create atmosphere without distraction
+
+9 interactive-timelines
+  • Non-linear timeline components with smart navigation and relationship visualization
+
+10 narrative-progress-trackers
+  • Progress indicators that tell visual stories as users advance through steps
+
+11 mood-based-form-fields
+  • Input fields with animations that reflect validation states and guide users
+
+12 voice-waveforms
+  • UI elements visualizing and responding to voice input with reactive animations
+
+13 tactile-toggles
+  • Switches with physics-based animations simulating different materials and feedback
+
+14 augmented-data-viz
+  • Charts with narrative sequences and interactive elements that maintain context
+
+15 spatial-navigation
+  • Navigation creating sense of physical space with 3D arrangement and path tracking
