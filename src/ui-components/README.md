@@ -69,4 +69,7 @@ For detailed styling and animation guidelines, see [COMPONENT_GUIDELINES.md](./C
 - **AnimatedDock**: A macOS-inspired dock with smooth magnification and bounce effects
 - **ParallaxStoryCards**: Multi-layered cards with elements that move at different speeds
 - **ParallaxTestimonials**: Beautiful testimonial cards with dynamic parallax effects
-- **ModernTabCards**: Aesthetic tab interface with smooth animations and transitions 
+- **ModernTabCards**: Aesthetic tab interface with smooth animations and transitions
+- **AestheticSidebar**: Glass-morphic sidebar with smooth animations and responsive collapsible design
+- **InteractiveGraph**: Beautiful animated line graph with interactive data points and tooltips
+- **MotionAnimatedList**: Interactive list with animations, drag-and-drop reordering, and expandable items 

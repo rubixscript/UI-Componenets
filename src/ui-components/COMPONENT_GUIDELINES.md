@@ -132,6 +132,29 @@ After creating your component, add it to `App.js`:
      • Brief description highlighting key features
    ```
 
+## Update README.md
+
+After creating and integrating your component, make sure to update the main README.md file:
+
+1. Add your component to the "Featured Components" section:
+   ```md
+   ### X. Your Component Name
+   Brief, compelling description of your component highlighting its unique features and use cases.
+   ```
+
+2. Update the usage example if your component should be showcased:
+   ```jsx
+   import { 
+     // ... existing components, 
+     YourComponentName 
+   } from '@your-org/ui-components';
+
+   // In your example code
+   <YourComponentName yourProp={yourValue} />
+   ```
+
+3. Ensure any special usage instructions or requirements are documented in the README if needed.
+
 ## Best Practices
 
 1. **Responsiveness**: Ensure all components work on different screen sizes
