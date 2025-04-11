@@ -1,0 +1,78 @@
+{
+    "title": "::Animated Dock:: with React JS 🚀",
+    "subtext": "✨Bouncy, Sassy macOS-style dock! ✨",
+    "hashtags": [
+        "#React",
+        "#JS",
+        "#UI",
+        "#UX",
+        "#Dev",
+        "#Code",
+        "#WebDev",
+        "#Design",
+        "#Frontend",
+        "#Tech"
+    ],
+    "content": [
+        {
+            "header": "Project Overview 🔍",
+            "summary": "",
+            "description": [
+                {
+                    "type": "text",
+                    "value": "A ::macOS-style animated dock:: with hover and click effects"
+                },
+                {
+                    "type": "subtext",
+                    "value": "Interactive and responsive dock component with smooth animations"
+                },
+                {
+                    "type": "Video",
+                    "value": ""
+                },
+                {
+                    "type": "subtext",
+                    "value": "Comment 'DOCK' for code"
+                }
+            ]
+        },
+        {
+            "header": "Key Features 🎯",
+            "summary": "",
+            "description": [
+                {
+                    "type": "text",
+                    "value": "::Smooth hover animations:: with scale effects"
+                },
+                {
+                    "type": "text",
+                    "value": "::Bounce effect:: on icon click"
+                },
+                {
+                    "type": "two-columns",
+                    "value": "{\"leftColumn\":\"::Animations::\\n- 💠 Hover scaling\\n- 💠 Bounce effect\\n- 💠 Smooth transitions\\n- 💠 Glass effect\",\"rightColumn\":\"::Features::\\n- 💠 Responsive design\\n- 💠 Icon labels\\n- 💠 Reflection effect\\n- 💠 Dynamic scaling\"}"
+                }
+            ]
+        },
+        {
+            "header": "UI Components 🎨",
+            "summary": "",
+            "description": [
+                {
+                    "type": "code",
+                    "value": "const AnimatedDock = () => {\n  const [hoveredIndex, setHoveredIndex] = useState(null);\n  const [isClicked, setIsClicked] = useState(null);\n  \n  return (\n    <div className=\"flex justify-center items-end h-24 w-full p-2\">\n      <div className=\"relative flex items-end h-full glass-effect rounded-2xl p-2 shadow-lg\">\n        {/* Dock Icons */}\n        {appIcons.map((app, index) => (\n          <div\n            key={app.id}\n            className={`relative mx-1 transition-all duration-300 ease-in-out`}\n            onMouseEnter={() => setHoveredIndex(index)}\n            onMouseLeave={() => setHoveredIndex(null)}\n            onClick={() => handleClick(index)}\n          >\n            {/* Icon with hover effects */}\n            <div className=\"w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden\">\n              <img src={app.logo} alt={app.name} className=\"w-8 h-8 object-contain\" />\n            </div>\n          </div>\n        ))}\n      </div>\n    </div>\n  );\n};"
+                }
+            ]
+        },
+        {
+            "header": "Technical Implementation 🛠️",
+            "summary": "",
+            "description": [
+                {
+                    "type": "code",
+                    "value": "// Animation and State Management\nconst handleClick = (index) => {\n  setIsClicked(index);\n  setTimeout(() => setIsClicked(null), 600);\n};\n\n// Scale calculation based on hover position\nconst calculateScale = (index) => {\n  if (hoveredIndex === null) return 1;\n  const distance = Math.abs(hoveredIndex - index);\n  if (distance === 0) return 1.5;\n  if (distance === 1) return 1.25;\n  if (distance === 2) return 1.1;\n  return 1;\n};\n\n// Glass effect styling\nconst glassEffect = {\n  background: 'rgba(255, 255, 255, 0.1)',\n  backdropFilter: 'blur(10px)',\n  border: '1px solid rgba(255, 255, 255, 0.2)'\n};"
+                }
+            ]
+        }
+    ]
+}
