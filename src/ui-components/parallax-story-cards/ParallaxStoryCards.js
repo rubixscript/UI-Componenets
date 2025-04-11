@@ -34,7 +34,7 @@ const storyCardsData = [
     id: 5,
     title: 'Historical Wonders',
     excerpt: 'Walking through the corridors of time',
-    coverImage: 'https://images.unsplash.com/photo-1459087704190-b3e4c121a40a',
+    coverImage: 'https://images.unsplash.com/photo-1563875818883-ccb057c9b6be',
     category: 'History'
   },
   {
@@ -123,7 +123,7 @@ const ParallaxStoryCards = () => {
           return (
             <div
               key={card.id}
-              className={`relative h-64 rounded-xl overflow-hidden transition-all duration-300 ease-out shadow-lg w-full min-w-[250px]
+              className={`relative h-64 rounded-xl overflow-hidden transition-all duration-500 ease-out shadow-lg w-full min-w-[250px]
                 ${isHovered ? 'shadow-xl scale-105 z-10' : ''}
                 ${isClicked === index ? 'animate-pulse' : ''}`}
               style={{
@@ -137,7 +137,7 @@ const ParallaxStoryCards = () => {
             >
               {/* Card background image with parallax effect */}
               <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-200 ease-out"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out"
                 style={{
                   backgroundImage: `url(${card.coverImage})`,
                   transform: `translateX(${shiftX}px) translateY(${shiftY}px) scale(${isHovered ? 1.1 : 1.05})`,
@@ -147,7 +147,7 @@ const ParallaxStoryCards = () => {
               
               {/* Card category badge */}
               <div 
-                className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-xs font-bold py-1 px-2 rounded-full transition-transform duration-200 ease-out"
+                className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-xs font-bold py-1 px-2 rounded-full transition-transform duration-500 ease-out"
                 style={{
                   transform: `translateX(${-shiftX * 0.5}px) translateY(${-shiftY * 0.5}px)`,
                   whiteSpace: 'nowrap', // Prevent category text from wrapping
@@ -158,7 +158,7 @@ const ParallaxStoryCards = () => {
               
               {/* Card content */}
               <div 
-                className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent text-white transition-transform duration-200 ease-out"
+                className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent text-white transition-transform duration-500 ease-out"
                 style={{
                   transform: `translateX(${-shiftX * 0.8}px) translateY(${-shiftY * 0.8}px)`,
                   whiteSpace: 'normal', // Ensure text wraps normally
@@ -167,7 +167,7 @@ const ParallaxStoryCards = () => {
                 }}
               >
                 <h3 
-                  className="text-xl font-bold mb-2 transition-transform duration-200 ease-out"
+                  className="text-xl font-bold mb-2 transition-transform duration-500 ease-out"
                   style={{
                     transform: `translateX(${-shiftX * 1.2}px) translateY(${-shiftY * 1.2}px)`,
                     whiteSpace: 'normal', // Ensure text wraps normally
@@ -179,7 +179,7 @@ const ParallaxStoryCards = () => {
                   {card.title}
                 </h3>
                 <p 
-                  className="text-sm opacity-90 transition-transform duration-200 ease-out"
+                  className="text-sm opacity-90 transition-transform duration-500 ease-out"
                   style={{
                     transform: `translateX(${-shiftX * 1.4}px) translateY(${-shiftY * 1.4}px)`,
                     whiteSpace: 'normal', // Ensure text wraps normally

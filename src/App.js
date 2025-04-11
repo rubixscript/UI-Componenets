@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { AnimatedDock, ParallaxStoryCards, ParallaxTestimonials } from './ui-components';
+import { AnimatedDock, ParallaxStoryCards, ParallaxTestimonials, ModernTabCards } from './ui-components';
 
 // Define all UI components with their metadata
 const UI_COMPONENTS = [
@@ -21,6 +21,12 @@ const UI_COMPONENTS = [
     name: 'Parallax Testimonials',
     description: 'Beautiful testimonial cards with dynamic parallax effects',
     component: ParallaxTestimonials,
+  },
+  {
+    id: 'modern-tab-cards',
+    name: 'Modern Tab Cards',
+    description: 'Aesthetic tab interface with smooth animations and hover effects',
+    component: ModernTabCards,
   },
   // More components can be added here as they're created
 ];
